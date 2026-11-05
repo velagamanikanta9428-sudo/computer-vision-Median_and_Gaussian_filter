@@ -1,4 +1,4 @@
-# CV Lab 08 – Image Smoothing Using Median and Gaussian Filters
+# Image Smoothing Using Median and Gaussian Filters
 
 ## Aim
 To perform image smoothing using **Median Filtering** and **Gaussian Filtering**, and compare their outputs with the original grayscale image.
@@ -23,7 +23,7 @@ This Jupyter Notebook uses OpenCV and Matplotlib to apply two filtering techniqu
 ```text
 CV-Lab-08/
 ├── CVLAB08.ipynb
-├── download.jpg        # Input image (add this file)
+├── Salt & pepper Image.jpg  
 └── README.md
 ```
 
@@ -44,7 +44,7 @@ pip install opencv-python numpy matplotlib
    ```bash
    pip install opencv-python numpy matplotlib
    ```
-4. Place `download.jpg` in the project folder.
+4. Place `Salt & pepper Image.jpg` in the project folder.
 5. Open the notebook:
    ```bash
    jupyter notebook CVLAB08.ipynb
@@ -55,7 +55,7 @@ pip install opencv-python numpy matplotlib
 ### Option 2: Google Colab
 
 1. Upload `CVLAB08.ipynb` to Google Colab.
-2. Upload `download.jpg` to your Google Drive at the path expected by the notebook, or change the path in the code.
+2. Upload `Salt & pepper Image.jpg` to your Google Drive at the path expected by the notebook, or change the path in the code.
 3. Run the notebook cell.
 
 ## Important Code
@@ -63,15 +63,8 @@ pip install opencv-python numpy matplotlib
 The notebook currently reads the image from this Google Drive path:
 
 ```python
-A = cv2.imread('/content/drive/MyDrive/COMPUTER VISION/download.jpg', 0)
+A = cv2.imread('/content/drive/MyDrive/COMPUTER VISION/Salt & pepper Image.jpg', 0)
 ```
-
-If the image is in the same folder as the notebook, use:
-
-```python
-A = cv2.imread('download.jpg', 0)
-```
-
 The `0` argument loads the image in grayscale.
 
 ### Median Filter
@@ -98,10 +91,16 @@ The notebook displays three grayscale images side by side:
 - **Gaussian Filter** – the result after Gaussian smoothing.
 
 ## Notes
-- The notebook expects an input image named `download.jpg` at the configured path.
+- The notebook expects an input image named `Salt & pepper Image.jpg` at the configured path.
 - Add the input image to the GitHub repository so others can reproduce the output.
 - If the notebook prints `Error: Image not found.`, check the image filename and path.
 - The notebook uses a 3 × 3 kernel for both filters.
 
 ## Author
-Add your name, department, college, and academic details here if required.
+Velaga Manikanta Sai.
+
+241FA23016.
+
+Data Science-A.
+
+
